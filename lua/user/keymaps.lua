@@ -39,3 +39,4 @@ keymap("n", "<leader>w", ":w!<CR>", opts)
 keymap("n", "<leader>q", ":q!<CR>", opts)
 
 -- telescope
+keymap("n", "<leader>ff", ":Telescope find_files<CR>", {})

@@ -46,6 +46,8 @@ return packer.startup(function(use)
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} --treesitter support for all nvim
     use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
     use {'nvim-telescope/telescope.nvim'}
+    use {'numToStr/Comment.nvim', requires = 'JoosepAlviste/nvim-ts-context-commentstring'}
+    use {"akinsho/toggleterm.nvim"}
     -- cmp plugins
     use ('hrsh7th/nvim-cmp')
     use ('hrsh7th/cmp-buffer')
@@ -55,6 +57,8 @@ return packer.startup(function(use)
     -- snippets
     use ('L3MON4D3/LuaSnip')
     use ('rafamadriz/friendly-snippets')
+    -- Lsp
+    use ('neovim/nvim-lspconfig')
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
