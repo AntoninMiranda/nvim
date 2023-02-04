@@ -40,3 +40,6 @@ keymap("n", "<leader>q", ":q!<CR>", opts)
 
 -- telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", {})
+
+-- native modif
+keymap("n", "<leader>t", "<C-4>", opts)

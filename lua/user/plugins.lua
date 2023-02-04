@@ -40,14 +40,17 @@ packer.init {
 -- add your plugins here
 return packer.startup(function(use)
     use {'wbthomason/packer.nvim'} --packer piugin manager
+    use {'Nero-F/vim-tek-header'} -- header epitech
     use {'nvim-lua/popup.nvim'} --popup plugin needed by most of plugins
     use {'nvim-lua/plenary.nvim'} --plugin needed by a lot of plugins
     use { "kyazdani42/nvim-tree.lua", requires = {'nvim-tree/nvim-web-devicons'}}
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} --treesitter support for all nvim
-    use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
+    use {'projekt0n/github-nvim-theme', tag = 'v0.0.7'}
     use {'nvim-telescope/telescope.nvim'}
     use {'numToStr/Comment.nvim', requires = 'JoosepAlviste/nvim-ts-context-commentstring'}
     use {"akinsho/toggleterm.nvim"}
+    -- exec terminal command in nvim
+    use {'skywind3000/asyncrun.vim'}
     -- cmp plugins
     use ('hrsh7th/nvim-cmp')
     use ('hrsh7th/cmp-buffer')
@@ -59,7 +62,8 @@ return packer.startup(function(use)
     use ('rafamadriz/friendly-snippets')
     -- Lsp
     use ('neovim/nvim-lspconfig')
-
+    -- git commit push on nvim
+    use {'TimUntersberger/neogit'}
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
