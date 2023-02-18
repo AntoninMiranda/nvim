@@ -6,9 +6,6 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Nerd Tree
-keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
-
 -- Set split and vsplit
 keymap("n", "<leader>]", ":vsplit<CR>", opts)
 keymap("n", "<leader>-", ":split<CR>", opts)

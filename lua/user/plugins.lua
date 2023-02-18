@@ -43,12 +43,11 @@ return packer.startup(function(use)
     use {'Nero-F/vim-tek-header'} -- header epitech
     use {'nvim-lua/popup.nvim'} --popup plugin needed by most of plugins
     use {'nvim-lua/plenary.nvim'} --plugin needed by a lot of plugins
-    use { "kyazdani42/nvim-tree.lua", requires = {'nvim-tree/nvim-web-devicons'}}
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} --treesitter support for all nvim
     use {'projekt0n/github-nvim-theme', tag = 'v0.0.7'}
     use {'nvim-telescope/telescope.nvim'}
-    use {'numToStr/Comment.nvim', requires = 'JoosepAlviste/nvim-ts-context-commentstring'}
+    use {'shoukoo/commentary.nvim'}
     use {"akinsho/toggleterm.nvim"}
+    use {'normen/vim-pio'}
     -- exec terminal command in nvim
     use {'skywind3000/asyncrun.vim'}
     -- cmp plugins
@@ -62,6 +61,11 @@ return packer.startup(function(use)
     use ('rafamadriz/friendly-snippets')
     -- Lsp
     use ('neovim/nvim-lspconfig')
+    use ('folke/lsp-colors.nvim')
+    -- error popup
+    use {'folke/trouble.nvim', requires = 'nvim-tree/nvim-web-devicons'}
+    -- copilot
+    use {'github/copilot.vim'}
     -- git commit push on nvim
     use {'TimUntersberger/neogit'}
     if PACKER_BOOTSTRAP then

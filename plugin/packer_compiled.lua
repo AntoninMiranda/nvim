@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -109,6 +104,16 @@ _G.packer_plugins = {
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["commentary.nvim"] = {
+    loaded = true,
+    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/commentary.nvim",
+    url = "https://github.com/shoukoo/commentary.nvim"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
+  },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
   },
   neogit = {
     loaded = true,
@@ -133,21 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-context-commentstring"] = {
-    loaded = true,
-    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
-    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -178,6 +173,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nemo/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-pio"] = {
+    loaded = true,
+    path = "/home/nemo/.local/share/nvim/site/pack/packer/start/vim-pio",
+    url = "https://github.com/normen/vim-pio"
   },
   ["vim-tek-header"] = {
     loaded = true,
